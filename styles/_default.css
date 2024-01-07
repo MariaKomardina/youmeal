@@ -5,6 +5,9 @@
 
   --bg-color: #F9F9F9;
   --text-color: #000000;
+  --white-color: #FFF;
+  --jrange-color: #FFAB08;
+  --red-orange-color: #FF5C00;
 }
 
 html {
@@ -27,6 +30,7 @@ body {
 }
 
 img, svg {
+  display: block;
   max-width: 100%;
   max-height: 100%;
   height: auto;
@@ -68,6 +72,33 @@ h1, h2, h3, p {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
+  :root {
+    --container: 640px;
+  }
+}
 
+@media (min-width: 768px) {
+  :root {
+    --padding-container: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container: 960px;
+    --padding-container: 32px;
+  }
+}
+
+@media (min-width: 1360px) {
+  :root {
+    --container: 1290px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --padding-container: 75px;
+  }
 }
